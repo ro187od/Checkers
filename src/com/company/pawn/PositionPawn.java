@@ -5,7 +5,7 @@ public class PositionPawn {
     private char numberPos;
 
     public char getLetterPos() {
-        return letterPos;
+        return (char) (letterPos - 'A');
     }
 
     public void setLetterPos(char letterPos) {
@@ -13,7 +13,7 @@ public class PositionPawn {
     }
 
     public char getNumberPos() {
-        return numberPos;
+        return (char) (numberPos - '1');
     }
 
     public void setNumberPos(char numberPos) {

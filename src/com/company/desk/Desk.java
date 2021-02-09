@@ -42,15 +42,9 @@ public class Desk {
     }
 
 
-    public boolean toTakeAPosition(PositionPawn positionPawn) {
-        char letterPos = positionPawn.getLetterPos();
-        char numberPos = positionPawn.getNumberPos();
-        if(deskTable[letterPos - 'A'][numberPos - '1'] == '+'){
-            System.out.println("Я изменился");
-            deskTable[letterPos - 'A'][numberPos - '1'] = 'x';
-            return true;
-
+    public void toTakeAPosition(char letterPos, char numberPos) {
+        if(deskTable[letterPos][numberPos] == '+'){
+            deskTable[letterPos][numberPos] = 'x';
         }
-        return false;
     }
 }

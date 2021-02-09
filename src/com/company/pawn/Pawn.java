@@ -13,6 +13,10 @@ public class Pawn {
     }
 
     public void toTakeAPositionOnTheDesk(){
-        desk.toTakeAPosition(positionPawn);
+        desk.toTakeAPosition(positionPawn.getLetterPos(), positionPawn.getNumberPos());
+    }
+
+    public void toWalk(PositionPawn positionPawn_2) {
+        desk.toTakeAPosition(positionPawn_2.getLetterPos(), positionPawn_2.getNumberPos());
     }
 }

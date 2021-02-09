@@ -12,5 +12,8 @@ public class Main {
         Pawn pawn = new Pawn(desk, positionPawn_1);
         pawn.toTakeAPositionOnTheDesk();
         desk.print();
+        PositionPawn positionPawn_2 = new PositionPawn("C2");
+        pawn.toWalk(positionPawn_2);
+        desk.print();
     }
 }
